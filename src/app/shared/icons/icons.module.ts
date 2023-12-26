@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-
 import { TablerIconsModule } from 'angular-tabler-icons';
 import { IconCamera, IconHeart, IconBrandGithub } from 'angular-tabler-icons/icons';
 

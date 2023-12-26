@@ -1,0 +1,15 @@
+:host {
+    background-color: #3e60d2;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; /* To ensure it stays above other content */
+}
+
+.main {
+    min-height: 100vh;
+}
