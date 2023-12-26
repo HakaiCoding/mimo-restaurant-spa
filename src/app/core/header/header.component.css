@@ -1,3 +1,39 @@
-p {
-    background-color: #c156df;
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: aqua;
+    padding: 0 3rem;
+}
+
+.header__logo-container {
+    background-color: red;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__logo {
+    width: 4rem;
+    min-width: 3rem;
+}
+
+.header__toolbar {
+    background-color: green;
+    flex: 9;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0;
+    width: auto;
+    height: auto;
+}
+
+.header__button {
+    cursor: pointer;
+    font-size: .9em;
+}
+
+.header__button:hover{
+    color: red;
 }
