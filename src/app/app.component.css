@@ -2,13 +2,13 @@
     /* background-color: #3e60d2; */
 }
 
-.header {
+/* .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 100; /* To ensure it stays above other content */
-}
+    z-index: 100;
+} */
 
 .main {
     min-height: 100vh;
