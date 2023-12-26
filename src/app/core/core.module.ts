@@ -4,6 +4,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { IconsModule } from '../shared/icons/icons.module';
 
 
 
@@ -15,6 +16,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
   ],
   imports: [
     CommonModule,
+    IconsModule,
     MatToolbarModule,
   ],
   exports: [
