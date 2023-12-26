@@ -7,7 +7,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 10; /* To ensure it stays above other content */
+    z-index: 100; /* To ensure it stays above other content */
 }
 
 .main {

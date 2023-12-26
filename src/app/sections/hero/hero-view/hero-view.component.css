@@ -1,0 +1,53 @@
+.hero-view {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-view__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: brightness(70%);
+}
+
+.hero-view__content {
+    position: relative;
+    padding: 0;
+    line-height: normal;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    z-index: 1;
+}
+
+.hero-view__title {
+    font-size: 3rem;
+    font-weight: 500;
+    color: white;
+}
+
+.hero-view__subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: white;
+}
+
+.hero-view__cta-button {
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.hero-view__cta-button:hover {
+    color: red;
+}
+
+.mat-mdc-card-content:last-child {
+    padding-bottom: 0;
+}

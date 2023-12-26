@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeroViewComponent } from './hero-view/hero-view.component';
+import { MatCardModule } from '@angular/material/card';
 
 
 
@@ -9,7 +10,8 @@ import { HeroViewComponent } from './hero-view/hero-view.component';
     HeroViewComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatCardModule,
   ],
   exports: [
     HeroViewComponent
