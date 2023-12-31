@@ -1,16 +1,17 @@
 import { NgModule } from '@angular/core';
 import { TablerIconsModule } from 'angular-tabler-icons';
-import { IconChefHat, IconHome, IconInfoCircle, IconMenu2, IconPhone, IconPhoto, IconStar, IconX } from 'angular-tabler-icons/icons';
+import { IconBrandFacebookFilled, IconBrandGoogleFilled, IconBrandInstagram, IconBrandTripadvisor, IconMailFilled, IconMapPinFilled, IconMenu2, IconPhoneFilled, IconX } from 'angular-tabler-icons/icons';
 
 const icons = {
   IconMenu2,
   IconX,
-  IconHome,
-  IconInfoCircle,
-  IconChefHat,
-  IconPhoto,
-  IconStar,
-  IconPhone
+  IconPhoneFilled,
+  IconMailFilled,
+  IconMapPinFilled,
+  IconBrandFacebookFilled,
+  IconBrandInstagram,
+  IconBrandGoogleFilled,
+  IconBrandTripadvisor,
 };
 
 @NgModule({

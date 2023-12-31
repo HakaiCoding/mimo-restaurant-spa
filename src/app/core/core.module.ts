@@ -7,6 +7,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { NavigationMenuComponent } from './header/child-components/navigation-menu/navigation-menu.component';
+import { MatCardModule } from '@angular/material/card';
 
 
 
@@ -15,13 +16,14 @@ import { NavigationMenuComponent } from './header/child-components/navigation-me
   declarations: [
     FooterComponent,
     HeaderComponent,
-    NavigationMenuComponent
+    NavigationMenuComponent,
   ],
   imports: [
     CommonModule,
     RouterModule,
     IconsModule,
     MatToolbarModule,
+    MatCardModule
   ],
   exports: [
     FooterComponent,
