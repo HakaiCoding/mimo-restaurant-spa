@@ -138,7 +138,7 @@ td {
 svg {
     width: 100%;
     display: block;
-    fill: currentColor;
+    /* fill: currentColor; */
 }
 
 /* Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */

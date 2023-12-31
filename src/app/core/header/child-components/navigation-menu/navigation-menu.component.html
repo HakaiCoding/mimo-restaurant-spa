@@ -1,0 +1,34 @@
+<ng-container *ngIf="screen_size_service.isLargeScreen$ | async; else mobileHeader">
+    <!-- Desktop Navigation Menu -->
+    <mat-toolbar class="header__toolbar">
+        <ng-container *ngFor="let option of navigationMenu">
+            <button mat-button class="header__button" [ngClass]="{'active-option': option.isActive}"
+                (click)="navigation_menu_service.setActiveOption(option.name); scrollToViewtById(option.refId)"
+                >{{option.name}}</button>
+        </ng-container>
+    </mat-toolbar>
+</ng-container>
+<ng-template #mobileHeader>
+    <!-- Mobile Navigation Menu -->
+    <mat-toolbar class="header__toolbar header__toolbar--mobile">
+        <ng-container *ngIf="menuState === MenuState.Closed">
+            <i-tabler name="menu-2" class="header__icon header__icon--mobile "
+                (click)="navigation_menu_service.toggleMenuState()"></i-tabler>
+        </ng-container>
+        <ng-container *ngIf="menuState === MenuState.Open">
+            <i-tabler name="X" class="header__icon header__icon--mobile header__icon--mobile-close"
+                (click)="navigation_menu_service.toggleMenuState()"></i-tabler>
+        </ng-container>
+    </mat-toolbar>
+    <!-- Mobile Dropdown Menu -->
+    <ng-container *ngIf="menuState === MenuState.Open">
+        <div class="header__dropdown-menu" [@fadeInOut]>
+            <ng-container *ngFor="let option of navigationMenu">
+                <button mat-button class="header__button--mobile"
+                    [ngClass]="{'active-option-mobile': option.isActive}"
+                    (click)="navigation_menu_service.setActiveOption(option.name); scrollToViewtById(option.refId); navigation_menu_service.toggleMenuState()"
+                    >{{option.name}}</button>
+            </ng-container>
+        </div>
+    </ng-container>
+</ng-template>

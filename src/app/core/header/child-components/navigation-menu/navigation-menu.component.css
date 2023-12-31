@@ -1,0 +1,83 @@
+:host {
+    flex: 9;
+}
+
+/* Desktop View */
+.header__toolbar {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding: 0;
+    width: auto;
+    gap: 3rem;
+    background-color: transparent;
+}
+
+.header__button {
+    cursor: pointer;
+    font-size: .9em;
+    padding: .3rem;
+}
+
+/* Estilo de hover que se aplica solo si la clase active-option no está presente */
+.header__button:not(.active-option):hover {
+    color: red;
+}
+
+/* Estilos para la clase active-option */
+.active-option {
+    border-bottom: 1px solid;
+}
+
+/* Mobile View */
+.header__toolbar--mobile {
+    position: relative;
+    gap: 0;
+}
+
+.header__icon {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.header__dropdown-menu {
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__icon--mobile {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.header__icon--mobile-close {
+    filter: drop-shadow(0 0 3px white);
+}
+
+
+.header__dropdown-menu .header__button--mobile {
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #fff;
+    padding: 1rem;
+}
+
+/* Estilo de hover que se aplica solo si la clase active-option-mobile no está presente */
+.header__dropdown-menu .header__button--mobile:not(.active-option-mobile):hover {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+/* Estilos para la clase active-option-mobile */
+.header__dropdown-menu .header__button--mobile.active-option-mobile {
+    background-color: rgba(0, 0, 0, 0.25);
+    text-shadow: 0 0 1rem white;
+}
